@@ -23,7 +23,7 @@ begin
     p4 <= data(4) xor data(5) xor data(6) xor data(7);
 
     hamming_code <= data(7) & data(6) & data(5) & data(4) & p4 & data(3) & 
-                    data(2) & data(1) & p4 & data(0) & p2 & p1;
+                    data(2) & data(1) & p3 & data(0) & p2 & p1;
     
 
     parity <= xor_reduce(hamming_code);
